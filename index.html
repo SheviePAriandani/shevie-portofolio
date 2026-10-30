@@ -1,0 +1,403 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Shevie Putri Ariandani | Portfolio</title>
+<meta name="description" content="Personal portfolio of Shevie Putri Ariandani, an Informatics student at Universitas Ahmad Dahlan: intro video, CV, an essay on online shopping, and five game development journals.">
+<meta name="theme-color" content="#FFF8F0">
+<meta property="og:type" content="website">
+<meta property="og:title" content="Shevie Putri Ariandani | Portfolio">
+<meta property="og:description" content="A seventh-semester Informatics student, currently interning, and always learning.">
+<meta property="og:image" content="assets/images/og-image.jpg">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
+<link rel="preload" href="fonts/fredoka-latin-wght-normal.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="preload" href="fonts/figtree-latin-wght-normal.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="stylesheet" href="css/style.css">
+<link rel="stylesheet" href="css/sections.css">
+<script>
+  (function () {
+    var d = document.documentElement;
+    d.classList.add('js');
+    if (!window.matchMedia('(prefers-reduced-motion: reduce)').matches) {
+      d.classList.add('motion-pending');
+      setTimeout(function () { d.classList.remove('motion-pending'); }, 3500);
+    }
+    try {
+      var t = localStorage.getItem('shevie-theme');
+      if (t === 'dark' || t === 'light') d.setAttribute('data-theme', t);
+    } catch (e) {}
+  })();
+</script>
+</head>
+<body>
+
+<!-- ============ SVG sprite: original illustrations and icons ============ -->
+<svg width="0" height="0" style="position:absolute" aria-hidden="true" focusable="false">
+  <defs>
+    <!-- paw print -->
+    <symbol id="paw" viewBox="0 0 48 48">
+      <g class="art" stroke-width="2.6">
+        <path d="M24 22c-7 0-12 6-12 11 0 4 3 6 7 6 2 0 3.200-1 5-1s3 1 5 1c4 0 7-2 7-6 0-5-5-11-12-11z" fill="var(--fill,#FFC8DD)"/>
+        <ellipse cx="10.500" cy="21" rx="4" ry="5.500" transform="rotate(-18 10.500 21)" fill="var(--fill,#FFC8DD)"/>
+        <ellipse cx="19" cy="10.500" rx="4" ry="6" transform="rotate(-6 19 10.500)" fill="var(--fill,#FFC8DD)"/>
+        <ellipse cx="29" cy="10.500" rx="4" ry="6" transform="rotate(6 29 10.500)" fill="var(--fill,#FFC8DD)"/>
+        <ellipse cx="37.500" cy="21" rx="4" ry="5.500" transform="rotate(18 37.500 21)" fill="var(--fill,#FFC8DD)"/>
+      </g>
+    </symbol>
+    <!-- yarn ball -->
+    <symbol id="yarn" viewBox="0 0 52 52">
+      <g class="art" stroke-width="2.6">
+        <path d="M36 40c8 3 12 8 6 10" fill="none"/>
+        <circle cx="24" cy="25" r="20" fill="var(--fill,#D9CCFF)"/>
+        <path d="M7 19c9 3 22 1 31-9M5 30c11 3 26 1 35-10M11 41c9-2 21-5 28-15M18 6c-2 12 2 24 12 34" fill="none"/>
+      </g>
+    </symbol>
+    <!-- fish -->
+    <symbol id="fish" viewBox="0 0 68 40">
+      <g class="art" stroke-width="2.6">
+        <path d="M46 20 63 7v26z" fill="var(--fill,#CDE7FF)"/>
+        <path d="M5 20C15 5 37 5 48 20 37 35 15 35 5 20z" fill="var(--fill,#CDE7FF)"/>
+        <path d="M26 11c4 5 4 13 0 18M34 8l3 5M34 32l3-5" fill="none"/>
+        <circle cx="14" cy="18" r="2.200" fill="#3A2F4B" stroke="none"/>
+      </g>
+    </symbol>
+    <!-- heart -->
+    <symbol id="heart" viewBox="0 0 48 44">
+      <g class="art" stroke-width="2.6">
+        <path d="M24 40C9 29 4 21.500 4 14.500 4 8.500 8.500 4.500 13.500 4.500c4 0 8 2.200 10.500 6.500C26.500 6.700 30.500 4.500 34.500 4.500c5 0 9.500 4 9.500 10C44 21.500 39 29 24 40z" fill="var(--fill,#FFC8DD)"/>
+        <path d="M12 13c1-3 3.500-4 5.500-3.500" fill="none"/>
+      </g>
+    </symbol>
+    <!-- sparkle -->
+    <symbol id="sparkle" viewBox="0 0 48 48">
+      <g class="art" stroke-width="2.6">
+        <path d="M24 3c1.500 11 5 17 21 21-16 4-19.500 10-21 21-1.500-11-5-17-21-21C19 20 22.500 14 24 3z" fill="var(--fill,#FFF1B8)"/>
+      </g>
+    </symbol>
+    <!-- cat tail (swings from its base at the bottom) -->
+    <symbol id="cat-tail" viewBox="0 0 70 190">
+      <g fill="none" stroke-linecap="round" stroke-linejoin="round">
+        <path d="M30 184C30 134 8 122 14 82 19 52 50 44 46 14" stroke="#3A2F4B" stroke-width="30"/>
+        <path d="M30 184C30 134 8 122 14 82 19 52 50 44 46 14" stroke="var(--fill,#FFD9C7)" stroke-width="23"/>
+        <path d="M46 14c0-1 0-2 0-3" stroke="#3A2F4B" stroke-width="2.600"/>
+        <path d="M24 150c-3-8-4-14-2-20M18 100c1-8 5-13 10-17" stroke="#3A2F4B" stroke-width="3" opacity=".35"/>
+      </g>
+    </symbol>
+    <!-- loaf cat -->
+    <symbol id="cat-loaf" viewBox="0 0 150 92">
+      <g class="art" stroke-width="2.800">
+        <path d="M118 80c18-2 26-16 20-28" fill="none" stroke-width="13"/>
+        <path d="M118 80c18-2 26-16 20-28" fill="none" stroke="var(--fill,#FFF1B8)" stroke-width="8"/>
+        <path d="M8 84C6 52 30 28 72 28c40 0 66 22 64 56z" fill="var(--fill,#FFF1B8)"/>
+        <path d="M40 8l4 18 16-8zM86 8l-4 18-16-8z" fill="var(--fill,#FFF1B8)"/>
+        <ellipse cx="63" cy="47" rx="36" ry="30" fill="var(--fill,#FFF1B8)"/>
+        <path d="M45 41q5 5 10 0M71 41q5 5 10 0" fill="none"/>
+        <path d="M61 51l4 0-2 3z" fill="#FFC8DD"/>
+        <path d="M57 58q3 3 6 0 3 3 6 0" fill="none" stroke-width="2.200"/>
+        <path d="M100 52c4 6 4 14 0 22M112 48c5 7 5 18 0 28" fill="none" opacity=".45"/>
+      </g>
+    </symbol>
+    <!-- sleeping curled cat -->
+    <symbol id="cat-sleep" viewBox="0 0 180 84">
+      <g class="art" stroke-width="2.800" stroke-linecap="round" stroke-linejoin="round">
+        <path d="M156 64C138 84 92 84 62 70" fill="none" stroke-width="16"/>
+        <path d="M156 64C138 84 92 84 62 70" fill="none" stroke="var(--fill,#FFD9C7)" stroke-width="10.500"/>
+        <ellipse cx="100" cy="46" rx="68" ry="32" fill="var(--fill,#FFD9C7)"/>
+        <path d="M88 16c4 6 4 12 0 18M104 15c4 6 4 12 0 18M120 17c4 6 4 12 0 18" fill="none" opacity=".45"/>
+        <path d="M24 36 20 12l22 14zM50 26 70 14 66 40z" fill="var(--fill,#FFD9C7)"/>
+        <circle cx="46" cy="52" r="26" fill="var(--fill,#FFD9C7)"/>
+        <path d="M32 54q5 5 10 0M52 54q5 5 10 0" fill="none"/>
+        <path d="M44 61l5 0-2.500 3z" fill="#FFC8DD" stroke-width="2"/>
+        <ellipse cx="68" cy="74" rx="16" ry="7" fill="var(--fill,#FFD9C7)"/>
+      </g>
+    </symbol>
+    <!-- sitting cat (static copy) -->
+    <symbol id="cat-sit" viewBox="0 0 140 160">
+      <g class="art" stroke-width="2.800" stroke-linecap="round" stroke-linejoin="round">
+        <path d="M100 142C134 144 140 112 124 94" fill="none" stroke-width="16"/>
+        <path d="M100 142C134 144 140 112 124 94" fill="none" stroke="var(--fill,#FFD9C7)" stroke-width="10"/>
+        <path d="M70 66C36 66 28 108 28 134q0 18 20 18h44q20 0 20-18C112 108 104 66 70 66z" fill="var(--fill,#FFD9C7)"/>
+        <ellipse cx="70" cy="128" rx="17" ry="21" fill="#FFF8F0" stroke-width="0"/>
+        <path d="M58 152v-10M82 152v-10" fill="none"/>
+        <path d="M43 36 40 8q0-5 5-3l22 15zM97 36l3-28q0-5-5-3L73 20z" fill="var(--fill,#FFD9C7)"/>
+        <path d="M46 28l-1-12 11 8zM94 28l1-12-11 8z" fill="#FFC8DD" stroke-width="0"/>
+        <ellipse cx="70" cy="46" rx="34" ry="30" fill="var(--fill,#FFD9C7)"/>
+        <path d="M70 18v8M62 19l2 7M78 19l-2 7" fill="none" opacity=".4"/>
+        <ellipse cx="58" cy="46" rx="4" ry="5" fill="#3A2F4B" stroke="none"/>
+        <ellipse cx="82" cy="46" rx="4" ry="5" fill="#3A2F4B" stroke="none"/>
+        <path d="M67 54h6l-3 4z" fill="#FFC8DD" stroke-width="2"/>
+        <path d="M64 61q3 4 6 0 3 4 6 0" fill="none" stroke-width="2.200"/>
+        <path d="M38 52H26M38 58l-11 4M102 52h12M102 58l11 4" fill="none" stroke-width="2"/>
+      </g>
+    </symbol>
+
+    <!-- icons (stroke) -->
+    <symbol id="i-book" viewBox="0 0 24 24"><path d="M5 4h11a3 3 0 0 1 3 3v13H8a3 3 0 0 1-3-3z"/><path d="M5 17a3 3 0 0 1 3-3h11"/><path d="M9 8h6"/></symbol>
+    <symbol id="i-brush" viewBox="0 0 24 24"><path d="M4 20l1-4L16 5l3 3L8 19z"/><path d="M14 7l3 3"/></symbol>
+    <symbol id="i-dance" viewBox="0 0 24 24"><circle cx="12" cy="4.500" r="2"/><path d="M12 7.500v6M12 10L6.500 6.500M12 10l5.500-3.500M12 13.500l-3.500 7M12 13.500l4.500 2.500-1.500 4.500"/></symbol>
+    <symbol id="i-grid" viewBox="0 0 24 24"><rect x="4" y="4" width="7" height="7" rx="2"/><rect x="13" y="4" width="7" height="7" rx="2"/><rect x="4" y="13" width="7" height="7" rx="2"/><rect x="13" y="13" width="7" height="7" rx="2"/></symbol>
+    <symbol id="i-star" viewBox="0 0 24 24"><path d="M12 3l2.700 5.600 6.100.9-4.400 4.300 1 6.100L12 17l-5.500 2.900 1-6.100L3.200 9.500l6.100-.9z"/></symbol>
+    <symbol id="i-tag" viewBox="0 0 24 24"><path d="M3 12V4h8l10 10-8 8z"/><circle cx="7.500" cy="8.500" r="1.200"/></symbol>
+    <symbol id="i-globe" viewBox="0 0 24 24"><circle cx="12" cy="12" r="9"/><path d="M3 12h18M12 3c3.500 3.500 3.500 14.500 0 18M12 3c-3.500 3.500-3.500 14.500 0 18"/></symbol>
+    <symbol id="i-magnifier" viewBox="0 0 24 24"><circle cx="10.500" cy="10.500" r="6.500"/><path d="M15.500 15.500L21 21M8.500 9.500a2.500 2.500 0 0 1 4 0"/></symbol>
+    <symbol id="i-shield" viewBox="0 0 24 24"><path d="M12 3l8 3v6c0 5-3.500 8-8 9-4.500-1-8-4-8-9V6z"/><path d="M12 8v5M12 16.500v.01"/></symbol>
+    <symbol id="i-cart" viewBox="0 0 24 24"><path d="M3 4h3l2.500 11h9.500l2-8H7"/><circle cx="10" cy="19.500" r="1.500"/><circle cx="17" cy="19.500" r="1.500"/></symbol>
+    <symbol id="i-parcel" viewBox="0 0 24 24"><path d="M3 7l9-4 9 4v10l-9 4-9-4z"/><path d="M3 7l9 4 9-4M12 11v10"/></symbol>
+    <symbol id="i-camera" viewBox="0 0 24 24"><path d="M4 8h3l2-3h6l2 3h3v11H4z"/><circle cx="12" cy="13.500" r="3.500"/></symbol>
+    <symbol id="i-play" viewBox="0 0 24 24"><path d="M8 5v14l11-7z" fill="currentColor"/></symbol>
+    <symbol id="i-download" viewBox="0 0 24 24"><path d="M12 4v11M7 11l5 5 5-5M5 20h14"/></symbol>
+    <symbol id="i-ext" viewBox="0 0 24 24"><path d="M14 4h6v6M20 4l-9 9M18 14v5H5V6h5"/></symbol>
+    <symbol id="i-chev" viewBox="0 0 24 24"><path d="M6 9l6 6 6-6"/></symbol>
+    <symbol id="i-menu" viewBox="0 0 24 24"><path d="M4 7h16M4 12h16M4 17h16"/></symbol>
+    <symbol id="i-close" viewBox="0 0 24 24"><path d="M6 6l12 12M18 6L6 18"/></symbol>
+    <symbol id="i-sun" viewBox="0 0 24 24"><circle cx="12" cy="12" r="4"/><path d="M12 2v2.500M12 19.500V22M2 12h2.500M19.500 12H22M4.900 4.900l1.800 1.800M17.300 17.300l1.800 1.800M4.900 19.100l1.800-1.800M17.300 6.700l1.800-1.800"/></symbol>
+    <symbol id="i-moon" viewBox="0 0 24 24"><path d="M20 14.500A8 8 0 0 1 9.500 4 8 8 0 1 0 20 14.500z"/></symbol>
+    <symbol id="i-check" viewBox="0 0 24 24"><path d="M5 12.500l4.500 4.500L19 7.500"/></symbol>
+    <symbol id="i-chat" viewBox="0 0 24 24"><path d="M4 5h16v11H9l-5 4z"/><path d="M8 9.500h8M8 12.500h5"/></symbol>
+    <symbol id="i-arrow-up" viewBox="0 0 24 24"><path d="M12 19V5M6 11l6-6 6 6"/></symbol>
+  </defs>
+</svg>
+
+<a class="skip" href="#main">Skip to content</a>
+
+<!-- ============ Navigation ============ -->
+<header class="nav" id="nav">
+  <div class="nav-in">
+    <a class="brand" href="#home" aria-label="Shevie, back to the top">
+      <svg class="brand-cat" viewBox="0 0 40 36" aria-hidden="true"><path d="M4 34V6l9 8c4-1.500 10-1.500 14 0l9-8v28z" fill="#FFC8DD" stroke="#3A2F4B" stroke-width="2.500" stroke-linejoin="round"/><circle cx="14" cy="24" r="2" fill="#3A2F4B"/><circle cx="26" cy="24" r="2" fill="#3A2F4B"/></svg>
+      <span>Shevie</span>
+    </a>
+    <nav class="nav-links" id="nav-links" aria-label="Main">
+      <ul>
+        <li><a href="#home" data-sec="home">Home</a></li>
+        <li><a href="#video" data-sec="video">Intro video</a></li>
+        <li><a href="#cv" data-sec="cv">CV</a></li>
+        <li><a href="#shopping" data-sec="shopping">Online shopping</a></li>
+        <li><a href="#journals" data-sec="journals">Journals</a></li>
+      </ul>
+    </nav>
+    <button class="icon-btn theme-btn" id="theme-btn" type="button" aria-pressed="false" aria-label="Dark mode">
+      <svg class="ico ico-moon" aria-hidden="true"><use href="#i-moon"/></svg>
+      <svg class="ico ico-sun" aria-hidden="true"><use href="#i-sun"/></svg>
+    </button>
+    <button class="icon-btn menu-btn" id="menu-btn" type="button" aria-expanded="false" aria-controls="nav-links" aria-label="Menu">
+      <svg class="ico ico-open" aria-hidden="true"><use href="#i-menu"/></svg>
+      <svg class="ico ico-shut" aria-hidden="true"><use href="#i-close"/></svg>
+    </button>
+  </div>
+  <div class="thread" aria-hidden="true"><span class="thread-line" id="thread-line"></span><span class="thread-ball" id="thread-ball"><svg viewBox="0 0 52 52"><use href="#yarn"/></svg></span></div>
+</header>
+
+<main id="main">
+
+<!-- ============ 1. Home ============ -->
+<section id="home" class="room room-hero" aria-labelledby="hero-name">
+  <div class="deco" aria-hidden="true">
+    <svg class="d d1" viewBox="0 0 48 48"><use href="#sparkle"/></svg>
+    <svg class="d d2" viewBox="0 0 48 48" style="--fill:#CDEFE0"><use href="#paw"/></svg>
+    <svg class="d d3" viewBox="0 0 48 44" style="--fill:#FFD9C7"><use href="#heart"/></svg>
+    <svg class="d d4" viewBox="0 0 48 48" style="--fill:#D9CCFF"><use href="#sparkle"/></svg>
+    <span class="coffee-ring"></span>
+  </div>
+  <div class="wrap hero-grid">
+    <div class="hero-copy">
+      <div class="sec-meta"><span class="page-tag">p. 1</span><span class="sticker-label">Hello there</span></div>
+      <h1 id="hero-name" class="hero-name">Shevie Putri Ariandani</h1>
+      <div data-render="hero" class="dc"><!-- prerender:hero -->
+<p class="hero-line">Hi, I'm Shevie. A seventh-semester Informatics student, currently interning, and always learning.</p><p class="hero-sub hand">Welcome to my little corner of the internet. Stay a while.</p><ul class="chips" aria-label="Quick facts"><li class="chip chip-mint"><span class="chip-k">University</span><span class="chip-v">UAD Yogyakarta</span></li><li class="chip chip-butter"><span class="chip-k">Semester</span><span class="chip-v">7</span></li><li class="chip chip-sky"><span class="chip-k">Now</span><span class="chip-v">internship</span></li><li class="chip chip-blush"><span class="chip-k">Hobbies</span><span class="chip-v">reading, drawing, dance</span></li></ul>
+<!-- /prerender:hero --></div>
+    </div>
+
+    <div class="hero-art">
+      <div class="portrait">
+        <span class="washi washi-l" aria-hidden="true"></span>
+        <span class="washi washi-r" aria-hidden="true"></span>
+        <svg class="portrait-sparkle" viewBox="0 0 48 48" aria-hidden="true"><use href="#sparkle"/></svg>
+
+        <button class="peek" id="peek-cat" type="button" aria-label="Say hi to the cat">
+          <svg viewBox="0 0 170 118" aria-hidden="true">
+            <g class="peek-ears">
+              <path d="M30 40 22 8q-1-5 4-3l36 22z" fill="#D9CCFF" stroke="#3A2F4B" stroke-width="2.800" stroke-linejoin="round"/>
+              <path d="M140 40l8-32q1-5-4-3L108 27z" fill="#D9CCFF" stroke="#3A2F4B" stroke-width="2.800" stroke-linejoin="round"/>
+              <path d="M32 31 28 16l15 9zM138 31l4-15-15 9z" fill="#FFC8DD"/>
+            </g>
+            <path d="M12 118C6 86 14 56 40 42c14-8 76-8 90 0 26 14 34 44 28 76z" fill="#D9CCFF" stroke="#3A2F4B" stroke-width="2.800" stroke-linejoin="round"/>
+            <path d="M85 26v10M72 28l2 9M98 28l-2 9" stroke="#3A2F4B" stroke-width="2.600" stroke-linecap="round" opacity=".4" fill="none"/>
+            <g class="peek-eye" id="eye-l"><ellipse cx="58" cy="68" rx="7" ry="9"/><circle class="shine" cx="60.500" cy="64.500" r="2.400"/></g>
+            <g class="peek-eye" id="eye-r"><ellipse cx="112" cy="68" rx="7" ry="9"/><circle class="shine" cx="114.500" cy="64.500" r="2.400"/></g>
+            <ellipse cx="42" cy="84" rx="9" ry="5.500" fill="#FFC8DD" opacity=".7"/>
+            <ellipse cx="128" cy="84" rx="9" ry="5.500" fill="#FFC8DD" opacity=".7"/>
+            <path d="M80 80h10l-5 6z" fill="#FFC8DD" stroke="#3A2F4B" stroke-width="2.400" stroke-linejoin="round"/>
+            <path d="M85 86v3M85 89q-4 5-9 1M85 89q4 5 9 1" fill="none" stroke="#3A2F4B" stroke-width="2.400" stroke-linecap="round"/>
+            <path d="M34 80H14M34 87l-18 6M136 80h20M136 87l18 6" stroke="#3A2F4B" stroke-width="2" stroke-linecap="round"/>
+            <ellipse cx="52" cy="114" rx="16" ry="9" fill="#D9CCFF" stroke="#3A2F4B" stroke-width="2.800"/>
+            <ellipse cx="118" cy="114" rx="16" ry="9" fill="#D9CCFF" stroke="#3A2F4B" stroke-width="2.800"/>
+            <path d="M46 116v-5M52 117v-6M58 116v-5M112 116v-5M118 117v-6M124 116v-5" stroke="#3A2F4B" stroke-width="2" stroke-linecap="round"/>
+          </svg>
+          <span class="bubble" id="peek-bubble" role="status" aria-live="polite"></span>
+        </button>
+
+        <div data-render="portrait" class="dc"><!-- prerender:portrait -->
+<figure class="slot slot-empty portrait-slot" style="aspect-ratio:4/5" data-slot="hero-portrait"><div class="slot-ph" role="img" aria-label="Photo placeholder"><svg class="ico slot-ico" aria-hidden="true" focusable="false"><use href="#i-camera"></use></svg><span class="slot-ratio">4:5</span><span class="slot-spec">assets/images/profile/portrait.jpg</span><span class="slot-spec">1600 px</span></div></figure>
+<!-- /prerender:portrait --></div>
+
+        <svg class="sitcat" viewBox="0 0 140 160" aria-hidden="true">
+          <g class="sitcat-tail"><path d="M100 142C134 144 140 112 124 94" fill="none" stroke="#3A2F4B" stroke-width="16" stroke-linecap="round"/><path d="M100 142C134 144 140 112 124 94" fill="none" stroke="#FFD9C7" stroke-width="10" stroke-linecap="round"/></g>
+          <g class="art" stroke-width="2.800" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M70 66C36 66 28 108 28 134q0 18 20 18h44q20 0 20-18C112 108 104 66 70 66z" fill="#FFD9C7"/>
+            <ellipse cx="70" cy="128" rx="17" ry="21" fill="#FFF8F0" stroke-width="0"/>
+            <path d="M58 152v-10M82 152v-10" fill="none"/>
+            <path d="M43 36 40 8q0-5 5-3l22 15zM97 36l3-28q0-5-5-3L73 20z" fill="#FFD9C7"/>
+            <path d="M46 28l-1-12 11 8zM94 28l1-12-11 8z" fill="#FFC8DD" stroke-width="0"/>
+            <ellipse cx="70" cy="46" rx="34" ry="30" fill="#FFD9C7"/>
+            <path d="M70 18v8M62 19l2 7M78 19l-2 7" fill="none" opacity=".4"/>
+            <g class="sit-eye"><ellipse cx="58" cy="46" rx="4" ry="5" fill="#3A2F4B" stroke="none"/><ellipse cx="82" cy="46" rx="4" ry="5" fill="#3A2F4B" stroke="none"/></g>
+            <path d="M67 54h6l-3 4z" fill="#FFC8DD" stroke-width="2"/>
+            <path d="M64 61q3 4 6 0 3 4 6 0" fill="none" stroke-width="2.200"/>
+            <path d="M38 52H26M38 58l-11 4M102 52h12M102 58l11 4" fill="none" stroke-width="2"/>
+          </g>
+        </svg>
+      </div>
+    </div>
+  </div>
+  <a class="scroll-cue" href="#video" aria-label="Scroll to the intro video"><svg class="ico" aria-hidden="true"><use href="#i-chev"/></svg></a>
+</section>
+
+<!-- ============ 2. Intro video ============ -->
+<section id="video" class="room room-video" aria-labelledby="video-h">
+  <div class="wrap">
+    <header class="sec-head" data-sec-head>
+      <span class="page-tag">p. 2</span>
+      <div class="head-card"><span class="ears" aria-hidden="true"><i></i><i></i></span><h2 id="video-h">Intro video</h2></div>
+      <span class="sticker-label">Say hello</span>
+    </header>
+
+    <div class="stage" id="stage" data-pauses>
+      <div class="surround" id="surround">
+        <span class="tail-swing" aria-hidden="true"><svg viewBox="0 0 70 190"><use href="#cat-tail"/></svg></span>
+
+        <span class="float fl-1" aria-hidden="true" data-depth="1.2"><span class="float-in"><svg viewBox="0 0 48 48" style="--fill:#FFC8DD"><use href="#paw"/></svg></span></span>
+        <span class="float fl-2" aria-hidden="true" data-depth="0.8"><span class="float-in"><svg viewBox="0 0 68 40" style="--fill:#CDE7FF"><use href="#fish"/></svg></span></span>
+        <span class="float fl-3" aria-hidden="true" data-depth="1.6"><span class="float-in"><svg viewBox="0 0 52 52" style="--fill:#FFF1B8"><use href="#yarn"/></svg></span></span>
+        <span class="float fl-4" aria-hidden="true" data-depth="1"><span class="float-in"><svg viewBox="0 0 48 44" style="--fill:#FFC8DD"><use href="#heart"/></svg></span></span>
+        <span class="float fl-5" aria-hidden="true" data-depth="1.4"><span class="float-in"><svg viewBox="0 0 48 48" style="--fill:#FFF1B8"><use href="#sparkle"/></svg></span></span>
+
+        <div class="badge" aria-hidden="true">
+          <svg viewBox="0 0 120 120">
+            <defs><path id="badge-path" d="M60 60m-43 0a43 43 0 1 1 86 0a43 43 0 1 1-86 0"/></defs>
+            <circle cx="60" cy="60" r="57" fill="#FFF8F0" stroke="#3A2F4B" stroke-width="2.500"/>
+            <circle cx="60" cy="60" r="27" fill="#FFC8DD" stroke="#3A2F4B" stroke-width="2.500"/>
+            <text class="badge-text"><textPath href="#badge-path" textLength="268" lengthAdjust="spacing">Hello, I'm Shevie, hello, I'm Shevie,&#160;</textPath></text>
+            <path d="M60 46l3.500 8 8.500.8-6.500 5.600 2 8.400-7.500-4.600-7.500 4.600 2-8.400-6.500-5.600 8.500-.8z" fill="#FFF1B8" stroke="#3A2F4B" stroke-width="2" stroke-linejoin="round" class="badge-star"/>
+          </svg>
+        </div>
+
+        <div class="topper" id="vid-topper"><div data-render="topper" class="dc"><!-- prerender:topper -->
+<div class="sleeper" aria-hidden="true"><svg class="art-svg sleeper-cat" viewBox="0 0 180 84" aria-hidden="true" focusable="false" style="--fill:#FFD9C7"><use href="#cat-sleep"></use></svg><span class="zz z1">z</span><span class="zz z2">z</span><span class="zz z3">Z</span></div>
+<!-- /prerender:topper --></div></div>
+
+        <div class="vid-glow" aria-hidden="true"></div>
+        <div class="vid-frame" id="vid-frame">
+          <div class="vid-inner">
+            <div data-render="video" class="dc"><!-- prerender:video -->
+<div class="vid-screen vid-empty"><div class="vid-bg" aria-hidden="true"><svg class="art-svg vid-bgcat" viewBox="0 0 140 160" aria-hidden="true" focusable="false" style="--fill:#FFD9C7"><use href="#cat-sit"></use></svg></div><div class="vid-msg"><p class="vid-soon">Introduction video coming soon</p></div><button class="play" type="button" disabled="" aria-disabled="true" aria-label="Play video (not available yet)"><svg class="ico " aria-hidden="true" focusable="false"><use href="#i-play"></use></svg></button></div>
+<!-- /prerender:video --></div>
+            <span class="br br-tl" aria-hidden="true"></span><span class="br br-tr" aria-hidden="true"></span><span class="br br-bl" aria-hidden="true"></span><span class="br br-br" aria-hidden="true"></span>
+            <div class="rec" aria-hidden="true"><span class="rec-dot"></span><span class="rec-label">REC</span><span class="rec-time" id="rec-time">00:00:00</span></div>
+          </div>
+          <div class="eq" id="eq" aria-hidden="true"></div>
+        </div>
+      </div>
+      <p class="vid-caption"><span id="vid-title">Self-introduction by Shevie Putri Ariandani</span></p>
+
+      <div data-render="script" class="dc"><!-- prerender:script -->
+<div class="script card"><h3 class="script-h"><button class="acc-btn" type="button" id="script-btn" aria-expanded="false" aria-controls="script-panel"><span>Read the script</span><svg class="ico acc-chev" aria-hidden="true" focusable="false"><use href="#i-chev"></use></svg></button></h3><div class="acc-panel" id="script-panel" role="region" aria-labelledby="script-btn"><div class="acc-clip"><blockquote class="script-text">Hello everyone, good morning. My name is Shevie Putri Ariandani. Currently, I am a seventh-semester student, and I am also doing an internship. In the future, I hope to graduate on time and build a successful career where I can continue learning and growing. Nice to meet you all. Thank you.</blockquote></div></div></div>
+<!-- /prerender:script --></div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ 3. CV ============ -->
+<section id="cv" class="room room-cv" aria-labelledby="cv-h">
+  <div class="deco" aria-hidden="true">
+    <svg class="d d5" viewBox="0 0 52 52" style="--fill:#FFF1B8"><use href="#yarn"/></svg>
+    <svg class="d d6" viewBox="0 0 48 48"><use href="#sparkle"/></svg>
+  </div>
+  <div class="wrap">
+    <header class="sec-head" data-sec-head>
+      <span class="page-tag">p. 3</span>
+      <div class="head-card"><span class="ears" aria-hidden="true"><i></i><i></i></span><h2 id="cv-h">CV</h2></div>
+      <span class="sticker-label">At a glance</span>
+    </header>
+    <div data-render="cv" class="dc"><!-- prerender:cv -->
+<article class="cv-sheet" aria-label="Curriculum vitae of Shevie Putri Ariandani"><span class="cv-rings" aria-hidden="true"></span><header class="cv-head"><div class="cv-id"><p class="hand cv-kicker">Curriculum vitae</p><h3 class="cv-name">Shevie Putri Ariandani</h3><p class="cv-headline">Informatics student, Universitas Ahmad Dahlan</p></div></header><div class="cv-grid"><section class="cv-block cv-profile" aria-labelledby="cv-h-profile"><h4 id="cv-h-profile" class="cv-h">Profile</h4><p>Seventh-semester Informatics student at Universitas Ahmad Dahlan, currently doing an internship. I hope to graduate on time and build a career where I can keep learning and growing.</p></section><section class="cv-block cv-edu" aria-labelledby="cv-h-edu"><h4 id="cv-h-edu" class="cv-h">Education</h4><ol class="timeline"><li class="tl-item"><span class="tl-dot" aria-hidden="true"></span><p class="tl-period">2023 to present</p><p class="tl-school">Universitas Ahmad Dahlan, Yogyakarta</p><p class="tl-detail">Informatics</p></li><li class="tl-item"><span class="tl-dot" aria-hidden="true"></span><p class="tl-period">2019 to 2023</p><p class="tl-school">SMAN 1 Prembun</p><p class="tl-detail">Senior high school</p></li><li class="tl-item"><span class="tl-dot" aria-hidden="true"></span><p class="tl-period">2016 to 2019</p><p class="tl-school">SMPN 1 Prembun</p><p class="tl-detail">Junior high school</p></li></ol></section><section class="cv-block cv-exp" aria-labelledby="cv-h-exp"><h4 id="cv-h-exp" class="cv-h">Experience</h4><ul class="exp-list"><li class="card exp-card tint-peach"><span class="exp-ico" aria-hidden="true"><svg class="art-svg " viewBox="0 0 48 48" aria-hidden="true" focusable="false" style="--fill:#FFF8F0"><use href="#paw"></use></svg></span><div><p class="exp-role">Coordinator, Voter List (DPT) Division</p><p class="exp-org">Committee of the UKM Tari Congress</p><p class="exp-orig"><span class="sr-only">Original name: </span><span lang="id">Koor Divisi DPT, Panitia Kongres UKM Tari</span></p></div></li><li class="card exp-card tint-lav"><span class="exp-ico" aria-hidden="true"><svg class="art-svg " viewBox="0 0 48 48" aria-hidden="true" focusable="false" style="--fill:#FFF8F0"><use href="#paw"></use></svg></span><div><p class="exp-role" lang="id">Anggota Divisi DPT, Panitia Buwaca Satwatika 2024</p></div></li><li class="card exp-card tint-mint"><span class="exp-ico" aria-hidden="true"><svg class="art-svg " viewBox="0 0 48 48" aria-hidden="true" focusable="false" style="--fill:#FFF8F0"><use href="#paw"></use></svg></span><div><p class="exp-role" lang="id">Anggota Dewan Penggalang SMPN 1 Prembun</p></div></li></ul></section><section class="cv-block cv-int" aria-labelledby="cv-h-int2"><h4 id="cv-h-int2" class="cv-h">Interests</h4><ul class="hobbies"><li class="hobby hb-0"><span class="hobby-ico"><svg class="ico " aria-hidden="true" focusable="false"><use href="#i-book"></use></svg></span><span>Reading books</span></li><li class="hobby hb-1"><span class="hobby-ico"><svg class="ico " aria-hidden="true" focusable="false"><use href="#i-brush"></use></svg></span><span>Drawing</span></li><li class="hobby hb-2"><span class="hobby-ico"><svg class="ico " aria-hidden="true" focusable="false"><use href="#i-dance"></use></svg></span><span>Dance</span></li></ul></section><section class="cv-block cv-contact" aria-labelledby="cv-h-contact"><h4 id="cv-h-contact" class="cv-h">Contact</h4><p class="contact-line"><svg class="ico " aria-hidden="true" focusable="false"><use href="#i-chat"></use></svg><span>Available on request</span></p></section></div><footer class="cv-foot"><p class="hand">Updated October 2026</p></footer></article>
+<!-- /prerender:cv --></div>
+  </div>
+</section>
+
+<!-- ============ 4. Online shopping ============ -->
+<section id="shopping" class="room room-shop" aria-labelledby="shop-h">
+  <div class="wrap">
+    <header class="sec-head" data-sec-head>
+      <span class="page-tag">p. 4</span>
+      <div class="head-card"><span class="ears" aria-hidden="true"><i></i><i></i></span><h2 id="shop-h">Online shopping</h2></div>
+      <span class="sticker-label">An essay</span>
+    </header>
+    <div data-render="shopping" class="dc"><!-- prerender:shopping -->
+<div class="essay"><h3 class="essay-title">Online shopping: easy to love, worth shopping carefully</h3><blockquote class="pull" data-reveal=""><span class="pull-q" aria-hidden="true">“</span><p>Online shopping has become the first place many of us look when we need something, whether it is a notebook, a pair of earphones, or a new skincare product. It is quick and often cheaper, but a screen can only tell us so much. Here is how I weigh the good and the bad.</p></blockquote><div class="seesaw"><section class="side side-good" aria-labelledby="good-h"><h4 id="good-h" class="side-head">The good side</h4><ol class="items"><li class="card item item-good" id="good-1" data-reveal=""><span class="item-ico"><svg class="ico " aria-hidden="true" focusable="false"><use href="#i-grid"></use></svg></span><div><h5 class="item-t">Everything in one place.</h5><p>A single app can show hundreds of options for the same product, so it takes minutes, not an afternoon, to find what fits a budget.</p></div></li><li class="card item item-good" id="good-2" data-reveal=""><span class="item-ico"><svg class="ico " aria-hidden="true" focusable="false"><use href="#i-star"></use></svg></span><div><h5 class="item-t">Reviews you can learn from.</h5><p>Photos, ratings, and long reviews from real buyers help you spot problems before you pay, which is especially useful for products you cannot try first.</p></div></li><li class="card item item-good" id="good-3" data-reveal=""><span class="item-ico"><svg class="ico " aria-hidden="true" focusable="false"><use href="#i-tag"></use></svg></span><div><h5 class="item-t">Deals and vouchers.</h5><p>Discounts, free shipping, and bundles are easy to find, and a patient shopper can save a meaningful amount.</p></div></li><li class="card item item-good" id="good-4" data-reveal=""><span class="item-ico"><svg class="ico " aria-hidden="true" focusable="false"><use href="#i-globe"></use></svg></span><div><h5 class="item-t">Reach beyond the neighbourhood.</h5><p>Smaller brands and specialty products that no local store stocks are suddenly one tap away, and they arrive at the door.</p></div></li></ol></section><section class="side side-bad" aria-labelledby="bad-h"><h4 id="bad-h" class="side-head">The not so good side</h4><ol class="items"><li class="card item item-bad" id="bad-1" data-reveal=""><span class="item-ico"><svg class="ico " aria-hidden="true" focusable="false"><use href="#i-magnifier"></use></svg></span><div><h5 class="item-t">You cannot test the product.</h5><p>Texture, scent, shade, and size can all be different from the photos. For skincare this matters most, because skin reacts differently from person to person.</p></div></li><li class="card item item-bad" id="bad-2" data-reveal=""><span class="item-ico"><svg class="ico " aria-hidden="true" focusable="false"><use href="#i-shield"></use></svg></span><div><h5 class="item-t">Fake or mislabelled items.</h5><p>Counterfeit products exist, and a very low price should raise a question. Official stores, a registration number from BPOM, and a clear expiry date are easy checks.</p></div></li><li class="card item item-bad" id="bad-3" data-reveal=""><span class="item-ico"><svg class="ico " aria-hidden="true" focusable="false"><use href="#i-cart"></use></svg></span><div><h5 class="item-t">Impulse buying.</h5><p>Flash sales, countdown timers, and “only 2 left” labels push us to decide fast, and the cart fills up with things we did not plan to buy.</p></div></li><li class="card item item-bad" id="bad-4" data-reveal=""><span class="item-ico"><svg class="ico " aria-hidden="true" focusable="false"><use href="#i-parcel"></use></svg></span><div><h5 class="item-t">Delivery and returns.</h5><p>Parcels can leak, get crushed, or sit in the heat, and a refund can take patience and a lot of messages with the seller.</p></div></li></ol></section></div><section class="card habits" data-reveal="" aria-labelledby="habits-h"><h4 id="habits-h" class="habits-h">Habits that help</h4><ul class="checks"><li><label class="check"><input type="checkbox" data-habit="0"><span class="box" aria-hidden="true"><svg class="ico " aria-hidden="true" focusable="false"><use href="#i-check"></use></svg></span><span class="check-t">Buy from official or well-rated stores.</span></label></li><li><label class="check"><input type="checkbox" data-habit="1"><span class="box" aria-hidden="true"><svg class="ico " aria-hidden="true" focusable="false"><use href="#i-check"></use></svg></span><span class="check-t">Read reviews that include photos, and check the lowest ratings first.</span></label></li><li><label class="check"><input type="checkbox" data-habit="2"><span class="box" aria-hidden="true"><svg class="ico " aria-hidden="true" focusable="false"><use href="#i-check"></use></svg></span><span class="check-t">Check the expiry date and the registration number on arrival.</span></label></li><li><label class="check"><input type="checkbox" data-habit="3"><span class="box" aria-hidden="true"><svg class="ico " aria-hidden="true" focusable="false"><use href="#i-check"></use></svg></span><span class="check-t">Wait a day before buying anything that was not on your list.</span></label></li></ul><p class="check-count hand" id="check-count" aria-live="polite">0 of 4 ticked</p></section><p class="closing" data-reveal=""><svg class="art-svg closing-cat" viewBox="0 0 150 92" aria-hidden="true" focusable="false" style="--fill:#FFF1B8"><use href="#cat-loaf"></use></svg><span>Used with a little care, online shopping is a great tool. The trick is to let it save us time without letting it decide for us.</span></p></div>
+<!-- /prerender:shopping --></div>
+  </div>
+</section>
+
+<!-- ============ 5. Journals ============ -->
+<section id="journals" class="room room-journals" aria-labelledby="jr-h">
+  <div class="deco" aria-hidden="true">
+    <svg class="d d7" viewBox="0 0 68 40" style="--fill:#CDE7FF"><use href="#fish"/></svg>
+  </div>
+  <div class="wrap">
+    <header class="sec-head" data-sec-head>
+      <span class="page-tag">p. 5</span>
+      <div class="head-card"><span class="ears" aria-hidden="true"><i></i><i></i></span><h2 id="jr-h">Journals</h2></div>
+      <span class="sticker-label">Five papers</span>
+    </header>
+    <div data-render="journals" class="dc"><!-- prerender:journals -->
+<p class="jr-intro">Five papers on game development that I read for the group assignment. Each card has a short summary and links to the article, the PDF, and the DOI.</p><div class="filters" role="group" aria-label="Filter journals by topic"><button class="fchip" type="button" data-filter="all" aria-pressed="true">All</button><button class="fchip" type="button" data-filter="unity" aria-pressed="false">Unity and GDLC</button><button class="fchip" type="button" data-filter="procedural" aria-pressed="false">Procedural generation</button><button class="fchip" type="button" data-filter="surveys" aria-pressed="false">Surveys</button></div><p class="sr-only" id="jr-status" role="status" aria-live="polite">Showing 5 of 5 journals</p><ol class="jr-list" id="jr-list"><li class="card jr" data-id="j1" data-tags="unity"><div class="jr-tags"><span class="tag tag-unity">Unity and GDLC</span></div><h3 class="jr-title">Development of a Web-Based First Person Shooter Game Using Unity with the Game Development Life Cycle Method</h3><p class="jr-orig"><span class="tag tag-lang">Indonesian</span><span class="sr-only">Original title: </span><span lang="id" class="jr-orig-t">Pengembangan Game First Person Shooter Berbasis Web Menggunakan Unity dengan Metode Game Development Life Cycle</span></p><p class="jr-cite">Alghivary, M. M., Suharso, A., &amp; Defiyanti, S. (2025). <em>JATI (Jurnal Mahasiswa Teknik Informatika)</em>, 9(1), 1152 to 1159.</p><div class="jr-sum"><p class="jsum" id="sum-j1">The authors develop a browser-based first person shooter in Unity that runs without extra installation, motivated by the limits local developers face: capital, technology access, project management, and marketing. They follow the Game Development Life Cycle (GDLC) through concept and planning, pre-production, production, and testing. Shooting, respawn, and interface features were built in Visual Studio and checked with black-box testing. The authors conclude that GDLC helps resolve technical obstacles and produces a game that fits user needs.</p><button class="more" type="button" aria-expanded="false" aria-controls="sum-j1">Read more</button></div><div class="jr-links"><a class="btn btn-sm" href="https://ejournal.itn.ac.id/jati/article/view/12643" target="_blank" rel="noopener noreferrer"><span>Article</span><svg class="ico " aria-hidden="true" focusable="false"><use href="#i-ext"></use></svg><span class="sr-only"> (opens in a new tab)</span></a><a class="btn btn-sm" href="https://ejournal.itn.ac.id/jati/article/download/12643/6994" target="_blank" rel="noopener noreferrer"><span>PDF</span><svg class="ico " aria-hidden="true" focusable="false"><use href="#i-ext"></use></svg><span class="sr-only"> (opens in a new tab)</span></a><a class="btn btn-sm" href="https://doi.org/10.36040/jati.v9i1.12643" target="_blank" rel="noopener noreferrer"><span>DOI</span><svg class="ico " aria-hidden="true" focusable="false"><use href="#i-ext"></use></svg><span class="sr-only"> (opens in a new tab)</span></a><span class="doi-text">10.36040/jati.v9i1.12643</span></div></li><li class="card jr" data-id="j2" data-tags="unity"><div class="jr-tags"><span class="tag tag-unity">Unity and GDLC</span></div><h3 class="jr-title">Exploration Game Application “Nusa Sang Penjelajah” Using Unity and C#</h3><p class="jr-orig"><span class="tag tag-lang">Indonesian</span><span class="sr-only">Original title: </span><span lang="id" class="jr-orig-t">Aplikasi Permainan Eksplorasi “Nusa Sang Penjelajah” Menggunakan Unity dan C#</span></p><p class="jr-cite">Rachman, A., &amp; Sari, R. N. (2025). <em>Jurnal Minfo Polgan</em>, 14(2), 3626 to 3632.</p><div class="jr-sum"><p class="jsum" id="sum-j2">A top-down exploration game in the style of Stardew Valley, built around Indonesian culture through folktales, artifacts, and temples. It was developed in Unity and C# with GDLC (planning, production, testing, and release). The authors report an engaging and educational game, and they position it as a way for young people to engage with local heritage.</p><button class="more" type="button" aria-expanded="false" aria-controls="sum-j2">Read more</button></div><div class="jr-links"><a class="btn btn-sm" href="https://jurnal.polgan.ac.id/index.php/jmp/article/view/15876" target="_blank" rel="noopener noreferrer"><span>Article</span><svg class="ico " aria-hidden="true" focusable="false"><use href="#i-ext"></use></svg><span class="sr-only"> (opens in a new tab)</span></a><a class="btn btn-sm" href="https://jurnal.polgan.ac.id/index.php/jmp/article/download/15876/3834" target="_blank" rel="noopener noreferrer"><span>PDF</span><svg class="ico " aria-hidden="true" focusable="false"><use href="#i-ext"></use></svg><span class="sr-only"> (opens in a new tab)</span></a><a class="btn btn-sm" href="https://doi.org/10.33395/jmp.v14i2.15876" target="_blank" rel="noopener noreferrer"><span>DOI</span><svg class="ico " aria-hidden="true" focusable="false"><use href="#i-ext"></use></svg><span class="sr-only"> (opens in a new tab)</span></a><span class="doi-text">10.33395/jmp.v14i2.15876</span></div></li><li class="card jr" data-id="j3" data-tags="unity"><div class="jr-tags"><span class="tag tag-unity">Unity and GDLC</span></div><h3 class="jr-title">Development of an Android-Based Platformer Game “Ayo Lawan Virus” Using the Unity Game Engine</h3><p class="jr-orig"><span class="tag tag-lang">Indonesian</span><span class="sr-only">Original title: </span><span lang="id" class="jr-orig-t">Pengembangan Game Platformer “Ayo Lawan Virus” Berbasis Android dengan Menggunakan Game Engine Unity</span></p><p class="jr-cite">Yedithia, F., Sulistyowati, &amp; Rosmiati. (2022). <em>Jurnal Humaniora Teknologi</em>, 8(1), 1 to 9.</p><div class="jr-sum"><p class="jsum" id="sum-j3">A game on clean and healthy living behavior (PHBS) for children and teenagers, set against the pandemic. The team ran observations and a literature study on viruses and hygiene practices, then produced the artwork with an illustrator. The finished game, “Ayo Lawan Virus” (Let's Fight the Virus), is distributed free to the public as an educational tool.</p><button class="more" type="button" aria-expanded="false" aria-controls="sum-j3">Read more</button></div><div class="jr-links"><a class="btn btn-sm" href="https://jht.politala.ac.id/index.php/jht/article/view/101" target="_blank" rel="noopener noreferrer"><span>Article</span><svg class="ico " aria-hidden="true" focusable="false"><use href="#i-ext"></use></svg><span class="sr-only"> (opens in a new tab)</span></a><a class="btn btn-sm" href="https://jht.politala.ac.id/index.php/jht/article/download/101/89" target="_blank" rel="noopener noreferrer"><span>PDF</span><svg class="ico " aria-hidden="true" focusable="false"><use href="#i-ext"></use></svg><span class="sr-only"> (opens in a new tab)</span></a><a class="btn btn-sm" href="https://doi.org/10.34128/jht.v8i1.101" target="_blank" rel="noopener noreferrer"><span>DOI</span><svg class="ico " aria-hidden="true" focusable="false"><use href="#i-ext"></use></svg><span class="sr-only"> (opens in a new tab)</span></a><span class="doi-text">10.34128/jht.v8i1.101</span></div></li><li class="card jr" data-id="j4" data-tags="procedural surveys"><div class="jr-tags"><span class="tag tag-procedural">Procedural generation</span><span class="tag tag-surveys">Surveys</span></div><h3 class="jr-title">Procedural Puzzle Generation: A Survey</h3><p class="jr-cite">De Kegel, B., &amp; Haahr, M. (2020). <em>IEEE Transactions on Games</em>, 12(1), 21 to 40.</p><div class="jr-sum"><p class="jsum" id="sum-j4">Procedural content generation (PCG) is used far less for puzzles than for other game elements, and most work stays within pure puzzle games rather than puzzles embedded in other genres. The authors survey 32 methods across eleven puzzle categories and define seven characteristics for comparing them, which also point to promising research areas.</p><button class="more" type="button" aria-expanded="false" aria-controls="sum-j4">Read more</button></div><p class="jr-extra hand">Open-access PDF, about 20 MB.</p><div class="jr-links"><a class="btn btn-sm" href="https://www.tara.tcd.ie/items/58270d70-f98a-462e-bdf3-5a21672dd3ba" target="_blank" rel="noopener noreferrer"><span>Article</span><svg class="ico " aria-hidden="true" focusable="false"><use href="#i-ext"></use></svg><span class="sr-only"> (opens in a new tab)</span></a><a class="btn btn-sm" href="https://www.tara.tcd.ie/bitstreams/fb01afb7-592a-4d27-aadc-096a7de59345/download" target="_blank" rel="noopener noreferrer"><span>PDF</span><svg class="ico " aria-hidden="true" focusable="false"><use href="#i-ext"></use></svg><span class="sr-only"> (opens in a new tab)</span></a><a class="btn btn-sm" href="https://doi.org/10.1109/TG.2019.2917792" target="_blank" rel="noopener noreferrer"><span>DOI</span><svg class="ico " aria-hidden="true" focusable="false"><use href="#i-ext"></use></svg><span class="sr-only"> (opens in a new tab)</span></a><span class="doi-text">10.1109/TG.2019.2917792</span></div></li><li class="card jr" data-id="j5" data-tags="procedural surveys"><div class="jr-tags"><span class="tag tag-procedural">Procedural generation</span><span class="tag tag-surveys">Surveys</span></div><h3 class="jr-title">Intelligent Generation of Graphical Game Assets: A Conceptual Framework and Systematic Review of the State of the Art</h3><p class="jr-cite">Fukaya, K., et al. (2025). <em>ACM Computing Surveys</em>, 57(5), Article 118.</p><div class="jr-sum"><p class="jsum" id="sum-j5">Games contain many graphical assets, such as clouds, buildings, and vegetation, that serve no gameplay function, and PCG is widely used to produce them. The review covers 200 papers on graphical asset generation in and beyond games, spanning 21 asset types, nine techniques, and 28 approaches. The GAGeTx framework consolidates the findings to guide the choice and design of asset generators.</p><button class="more" type="button" aria-expanded="false" aria-controls="sum-j5">Read more</button></div><p class="jr-extra hand">The PDF is the arXiv preprint (arXiv:2311.10129).</p><div class="jr-links"><a class="btn btn-sm" href="https://bura.brunel.ac.uk/handle/2438/28016" target="_blank" rel="noopener noreferrer"><span>Article</span><svg class="ico " aria-hidden="true" focusable="false"><use href="#i-ext"></use></svg><span class="sr-only"> (opens in a new tab)</span></a><a class="btn btn-sm" href="https://arxiv.org/pdf/2311.10129" target="_blank" rel="noopener noreferrer"><span>PDF</span><svg class="ico " aria-hidden="true" focusable="false"><use href="#i-ext"></use></svg><span class="sr-only"> (opens in a new tab)</span></a><a class="btn btn-sm" href="https://doi.org/10.1145/3708499" target="_blank" rel="noopener noreferrer"><span>DOI</span><svg class="ico " aria-hidden="true" focusable="false"><use href="#i-ext"></use></svg><span class="sr-only"> (opens in a new tab)</span></a><span class="doi-text">10.1145/3708499</span></div></li></ol><p class="jr-note"><span class="jr-note-ico" aria-hidden="true"><svg class="ico " aria-hidden="true" focusable="false"><use href="#i-chat"></use></svg></span>PDF links were checked against each journal's landing page. If a PDF does not open, use the article page or the DOI.</p>
+<!-- /prerender:journals --></div>
+  </div>
+</section>
+
+</main>
+
+<footer class="foot">
+  <div class="wrap foot-in">
+    <svg class="foot-cat" viewBox="0 0 150 92" aria-hidden="true" style="--fill:#FFF1B8"><use href="#cat-loaf"/></svg>
+    <div>
+      <p class="foot-name">Shevie Putri Ariandani</p>
+      <p class="foot-line" id="foot-line">Made for an English course at Universitas Ahmad Dahlan.</p>
+      <p class="foot-small">&copy; 2026 Shevie Putri Ariandani</p>
+    </div>
+    <a class="btn btn-ghost foot-top" href="#home"><svg class="ico" aria-hidden="true"><use href="#i-arrow-up"/></svg><span>Back to top</span></a>
+  </div>
+</footer>
+
+<dialog class="lightbox" id="lightbox" aria-label="Photo viewer">
+  <form method="dialog"><button class="icon-btn lb-close" aria-label="Close photo"><svg class="ico" aria-hidden="true"><use href="#i-close"/></svg></button></form>
+  <figure><img id="lb-img" alt="" width="1600" height="1200"><figcaption id="lb-cap" class="hand"></figcaption></figure>
+</dialog>
+
+<script src="js/vendor/gsap.min.js"></script>
+<script src="js/vendor/ScrollTrigger.min.js"></script>
+<script src="data/config.js"></script>
+<script src="data/cv.js"></script>
+<script src="data/shopping.js"></script>
+<script src="data/journals.js"></script>
+<script src="data/photos.js"></script>
+<script src="js/render.js"></script>
+<script src="js/app.js"></script>
+<script src="js/motion.js"></script>
+</body>
+</html>
