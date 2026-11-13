@@ -39,7 +39,7 @@ def main():
         except Exception:
             browser = p.chromium.launch()
         page = browser.new_page()
-        page.route(re.compile(r".*/js/(app|motion)\.js$"), lambda r: r.abort())
+        page.route(re.compile(r".*/js/(app|motion)\.js(\?.*)?$"), lambda r: r.abort())
         page.goto(f"http://127.0.0.1:{port}/index.html")
         page.wait_for_load_state("load")
         regions = page.evaluate(

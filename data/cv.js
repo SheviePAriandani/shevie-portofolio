@@ -1,10 +1,10 @@
 /* CV content. Items marked [CONFIRM] are kept off the page until Shevie approves them. */
 window.SITE_CV = {
-  headline: "Informatics student, Universitas Ahmad Dahlan",
-  profile: "Seventh-semester Informatics student at Universitas Ahmad Dahlan, currently doing an internship. I hope to graduate on time and build a career where I can keep learning and growing.",
+  headline: "Informatics Engineering student, Universitas Ahmad Dahlan",
+  profile: "Seventh-semester Informatics Engineering student at Universitas Ahmad Dahlan, currently doing an internship. I hope to graduate on time and build a career where I can keep learning and growing.",
 
   education: [
-    { school: "Universitas Ahmad Dahlan, Yogyakarta", detail: "Informatics", period: "2023 to present" },
+    { school: "Universitas Ahmad Dahlan, Yogyakarta", detail: "Informatics Engineering", period: "2023 to present" },
     { school: "SMAN 1 Prembun", detail: "Senior high school", period: "2019 to 2023" },
     { school: "SMPN 1 Prembun", detail: "Junior high school", period: "2016 to 2019" }
   ],

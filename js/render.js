@@ -252,6 +252,21 @@
   }
 
   /* ---------- job application letter ---------- */
+  function stampSvg() {
+    var holes = '', i;
+    for (i = 9; i < 72; i += 9) holes += '<circle cx="' + i + '" cy="0" r="3.2"/><circle cx="' + i + '" cy="88" r="3.2"/>';
+    for (i = 9; i < 88; i += 10) holes += '<circle cx="0" cy="' + i + '" r="3.2"/><circle cx="72" cy="' + i + '" r="3.2"/>';
+    return '<svg class="stamp" width="72" height="88" viewBox="0 0 72 88" aria-hidden="true" focusable="false">' +
+      '<rect x="1.5" y="1.5" width="69" height="85" fill="#FFF1B8" stroke="#3A2F4B" stroke-width="2"/>' +
+      '<g style="fill:var(--paper)">' + holes + '</g>' +
+      '<rect x="10" y="10" width="52" height="68" rx="3" fill="#FFC8DD" stroke="#3A2F4B" stroke-width="2"/>' +
+      '<use href="#paw" x="16" y="22" width="40" height="40" style="--fill:#FFF8F0"/>' +
+      '<path d="M18 68h36" stroke="#3A2F4B" stroke-width="2" stroke-linecap="round" stroke-dasharray="1 5"/></svg>' +
+      '<svg class="postmark" width="70" height="46" viewBox="0 0 70 46" aria-hidden="true" focusable="false">' +
+      '<circle cx="23" cy="23" r="19" fill="none" stroke="#3A2F4B" stroke-width="2"/>' +
+      '<path d="M2 34q6-6 12 0t12 0 12 0 12 0 12 0M2 40q6-6 12 0t12 0 12 0 12 0 12 0" fill="none" stroke="#3A2F4B" stroke-width="2" stroke-linecap="round" transform="translate(0 -14)"/></svg>';
+  }
+
   function letter() {
     var L = LETTER, s = L.sender || {};
     if (!L.paragraphs) return '';
@@ -261,7 +276,7 @@
     }).join('');
     return '<article class="letter-sheet" aria-label="Job application letter">' +
       '<span class="airmail" aria-hidden="true"></span>' +
-      '<span class="stamp" aria-hidden="true">' + art('paw', '0 0 48 48', '#FFC8DD') + '</span>' +
+      stampSvg() +
       '<header class="letterhead"><p class="lh-name">' + esc(s.name) + '</p><p>' + esc(s.university) + '</p><p>' + esc(s.place) + '</p></header>' +
       '<p class="lt-subject"><span class="lt-label">Subject:</span> ' + esc(L.subject) + '</p>' +
       '<p class="lt-salute">' + esc(L.salutation) + '</p>' +

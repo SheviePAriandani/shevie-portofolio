@@ -343,9 +343,8 @@ html:not(.js) .acc-btn { cursor: default; }
   background-color: var(--paper); border: 2px solid var(--line); border-radius: var(--r); box-shadow: 10px 10px 0 var(--shadow); }
 .airmail { position: absolute; left: 0; right: 0; top: 0; height: 14px; border-radius: calc(var(--r) - 2px) calc(var(--r) - 2px) 0 0;
   background: repeating-linear-gradient(135deg, #FFC8DD 0 18px, #FFF8F0 18px 26px, #CDE7FF 26px 44px, #FFF8F0 44px 52px); border-bottom: 2px solid var(--c-plum); }
-.stamp { position: absolute; right: clamp(1rem, 4vw, 2.4rem); top: 2.2rem; width: 64px; height: 76px; display: grid; place-items: center; transform: rotate(4deg);
-  background: var(--c-butter); border: 3px dotted var(--c-plum); border-radius: 4px; }
-.stamp svg { width: 36px; height: 36px; }
+svg.stamp { position: absolute; right: clamp(1rem, 4vw, 2.4rem); top: 2.4rem; width: 72px; height: 88px; transform: rotate(4deg); filter: drop-shadow(2px 3px 0 rgb(58 47 75 / .35)); }
+svg.postmark { position: absolute; right: calc(clamp(1rem, 4vw, 2.4rem) + 40px); top: 4.4rem; width: 70px; height: 46px; transform: rotate(-8deg); opacity: .45; pointer-events: none; }
 .letterhead { padding-bottom: 1.2rem; margin-bottom: 1.6rem; border-bottom: 3px dotted var(--ink2); color: var(--ink2); line-height: 1.5; padding-right: 5.5rem; }
 .lh-name { font: 600 clamp(1.5rem, 3.4vw, 2rem)/1.2 var(--f-display); color: var(--ink); }
 .lt-subject { font-weight: 700; margin-bottom: 1.4rem; }
@@ -358,4 +357,6 @@ html:not(.js) .acc-btn { cursor: default; }
 .figma-list { display: flex; flex-wrap: wrap; gap: .6rem; }
 .lt-close { margin-top: 1.6rem; }
 .lt-sign { font: 700 2.4rem/1.2 var(--f-hand); color: var(--ink); transform: rotate(-2deg); transform-origin: left; margin-top: .3rem; }
-@media (max-width: 560px) { .stamp { width: 52px; height: 62px; top: 2rem; } .stamp svg { width: 28px; height: 28px; } .letterhead { padding-right: 4rem; } }
+@media (max-width: 560px) { svg.stamp { width: 54px; height: 66px; top: 2.2rem; } svg.postmark { display: none; } .letterhead { padding-right: 4.2rem; } }
+
+@media (max-width: 560px) { .hobbies { gap: 1rem .5rem; } .hobby { width: 84px; } }
