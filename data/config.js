@@ -7,9 +7,9 @@ window.SITE_CONFIG = {
     greeting: "Hello there",
     aboutTitle: "A Little About Me",
     about: [
-      "Hi! I'm Shevie Putri Ariandani, an Informatics student at Universitas Ahmad Dahlan, currently in my seventh semester. I'm interested in game development and enjoy exploring how ideas can be turned into fun and interactive experiences.",
-      "At the moment, I'm doing an internship at a company by one of my lecturers, where I'm involved in a game development project. It's been a great opportunity to learn through real projects, explore different aspects of game development, and improve my skills along the way.",
-      "I'm always curious about trying new things, experimenting with ideas, and finding creative ways to bring them to life. For me, game development is not just about making a game work, but also about creating an experience that people can enjoy."
+      "Hi! I'm Shevie Putri Ariandani, an Informatics student at Universitas Ahmad Dahlan, currently in my seventh semester. I'm interested in game development and enjoy exploring how creative ideas can be turned into fun and interactive experiences.",
+      "I'm currently doing an internship at a technology company, where I work with a team on game development projects. This experience gives me the opportunity to learn new things, explore different tools, and improve my skills through real projects.",
+      "Outside my academic activities, I enjoy reading books, playing games, and dancing. I also like drawing from time to time and recently started learning how to knit. I'm always curious about trying new things and exploring different creative activities."
     ],
     sub: "Welcome to my little corner of the internet. Stay a while.",
     facts: [
