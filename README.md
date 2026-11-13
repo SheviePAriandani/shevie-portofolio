@@ -39,6 +39,7 @@ Semua teks ada di folder `data/`:
 | `shopping.js` | Esai belanja online, daftar kebiasaan, cerita skincare |
 | `journals.js` | Lima jurnal (judul, sitasi, ringkasan, link, DOI) |
 | `photos.js` | Slot foto |
+| `letter.js` | Surat lamaran (Job Application Letter): isi surat dan link Figma |
 
 Setelah mengedit, jalankan sekali:
 

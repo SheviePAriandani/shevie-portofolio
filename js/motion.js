@@ -53,7 +53,7 @@
   function restoreTransition(els) { els.forEach(function (e) { e.style.removeProperty('transition'); }); }
 
   /* mark things that should reveal on scroll */
-  var revealEls = $$('[data-reveal], .cv-block, .exp-card, .jr, .script, .vid-caption, .jr-note, .jr-intro, .filters');
+  var revealEls = $$('[data-reveal], .cv-block, .exp-card, .jr, .script, .vid-caption, .jr-note, .jr-intro, .filters, .letter-sheet');
   var seen = [];
   revealEls = revealEls.filter(function (e) { if (seen.indexOf(e) > -1) return false; seen.push(e); return true; });
   /* cards inside a block reveal with the block, so skip nested duplicates */

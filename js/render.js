@@ -8,6 +8,7 @@
   var JR = window.SITE_JOURNALS || [];
   var FILTERS = window.SITE_JOURNAL_FILTERS || [];
   var PHOTOS = window.SITE_PHOTOS || [];
+  var LETTER = window.SITE_LETTER || {};
 
   function esc(s) {
     return String(s == null ? '' : s).replace(/[&<>"']/g, function (c) {
@@ -250,9 +251,30 @@
     return o.join('');
   }
 
+  /* ---------- job application letter ---------- */
+  function letter() {
+    var L = LETTER, s = L.sender || {};
+    if (!L.paragraphs) return '';
+    var figma = (L.figma || []).map(function (f) {
+      return '<li><a class="btn btn-sm" href="' + esc(f.url) + '" target="_blank" rel="noopener noreferrer"><span>' + esc(f.label) + '</span>' + ico('ext') +
+        '<span class="sr-only"> (Figma project, opens in a new tab)</span></a></li>';
+    }).join('');
+    return '<article class="letter-sheet" aria-label="Job application letter">' +
+      '<span class="airmail" aria-hidden="true"></span>' +
+      '<span class="stamp" aria-hidden="true">' + art('paw', '0 0 48 48', '#FFC8DD') + '</span>' +
+      '<header class="letterhead"><p class="lh-name">' + esc(s.name) + '</p><p>' + esc(s.university) + '</p><p>' + esc(s.place) + '</p></header>' +
+      '<p class="lt-subject"><span class="lt-label">Subject:</span> ' + esc(L.subject) + '</p>' +
+      '<p class="lt-salute">' + esc(L.salutation) + '</p>' +
+      L.paragraphs.map(function (t) { return '<p class="lt-p">' + esc(t) + '</p>'; }).join('') +
+      (figma ? '<div class="lt-figma"><p class="lt-figma-h">' + esc(L.figmaTitle) + '</p><ul class="figma-list">' + figma + '</ul></div>' : '') +
+      '<p class="lt-p">' + esc(L.thanks) + '</p>' +
+      '<p class="lt-close">' + esc(L.closing) + '</p>' +
+      '<p class="lt-sign">' + esc(L.signature) + '</p></article>';
+  }
+
   var parts = {
     hero: hero, portrait: function () { return slot('hero-portrait', 'portrait-slot'); },
-    video: video, topper: topper, script: script, cv: cv, shopping: shopping, journals: journals
+    video: video, topper: topper, script: script, cv: cv, shopping: shopping, journals: journals, letter: letter
   };
 
   function renderAll() {

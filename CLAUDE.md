@@ -22,7 +22,7 @@ Static site: plain HTML, CSS, and JavaScript. No framework, no build step, no ru
 - Animate only transform, opacity, clip-path, and CSS custom properties.
 
 ## Data
-- Text lives in `data/*.js` (`config.js`, `cv.js`, `shopping.js`, `journals.js`, `photos.js`) so Shevie can edit it without touching markup.
+- Text lives in `data/*.js` (`config.js`, `cv.js`, `shopping.js`, `journals.js`, `photos.js`, `letter.js`) so Shevie can edit it without touching markup.
 - `js/render.js` renders from the data. The important content (hero, CV, essay, journal list) is also shipped as static HTML inside `index.html` (between `<!-- prerender:NAME -->` markers) so it reads without JavaScript. After editing data, run `python tools/prerender.py` to refresh that static copy.
 - Internship, skills, and the skincare story render only when their data is filled. No "coming soon" boxes.
 

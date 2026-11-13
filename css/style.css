@@ -50,6 +50,7 @@
   --room-cv: #CDE7FF;
   --room-shop: #FFD9C7;
   --room-journals: #FFF1B8;
+  --room-letter: #CDEFE0;
   --room-foot: #3A2F4B;
 
   --good: #CDEFE0;
@@ -90,6 +91,7 @@
   --room-cv: #25305A;
   --room-shop: #3B2B55;
   --room-journals: #33305A;
+  --room-letter: #263F52;
   --room-foot: #170F2A;
 
   --good: #2F5A58;
@@ -182,7 +184,7 @@ button { font: inherit; color: inherit; }
 .thread-ball { position: absolute; left: 0; bottom: -7px; width: 22px; height: 22px; transform: translateX(calc(var(--px, 0) * 1px - 11px)) rotate(calc(var(--p, 0) * 2400deg)); --fill: var(--c-lav); }
 .thread-ball svg { width: 100%; height: 100%; display: block; overflow: visible; --fill: #D9CCFF; }
 
-@media (max-width: 860px) {
+@media (max-width: 1080px) {
   .menu-btn { display: inline-grid; }
   .nav-links {
     position: absolute; left: 0; right: 0; top: 100%;
