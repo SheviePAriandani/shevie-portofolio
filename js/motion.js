@@ -81,7 +81,7 @@
       }).join(' ');
       gsap.set($$('.ch', heroName), { opacity: 0, yPercent: 70, rotate: function () { return gsap.utils.random(-14, 14); } });
     }
-    heroBits = $$('.hero-copy .sec-meta, .hero-line, .hero-sub, .chips li');
+    heroBits = $$('.hero-copy .sec-meta, .hero-about, .hero-sub, .chips li');
     gsap.set(heroBits, { opacity: 0, y: 24 });
     gsap.set('.portrait-slot', { opacity: 0, scale: .88, rotate: -5 });
     gsap.set('.washi', { opacity: 0, scale: .4 });
@@ -112,7 +112,7 @@
     heroTl
       .to($$('.ch', heroName), { opacity: 1, yPercent: 0, rotate: 0, duration: .7, stagger: .04 }, 0)
       .to($('.hero-copy .sec-meta'), { opacity: 1, y: 0, duration: .5 }, 0)
-      .to($$('.hero-line, .hero-sub'), { opacity: 1, y: 0, duration: .6, stagger: .12 }, .5)
+      .to($$('.hero-about, .hero-sub'), { opacity: 1, y: 0, duration: .6, stagger: .12 }, .5)
       .to($$('.chips li'), { opacity: 1, y: 0, duration: .5, stagger: .09 }, .75)
       .to('.portrait-slot', { opacity: 1, scale: 1, rotate: 0, duration: .8 }, .2)
       .to('.washi', { opacity: .92, scale: 1, duration: .5, stagger: .1 }, .7)

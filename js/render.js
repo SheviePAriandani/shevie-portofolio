@@ -53,7 +53,8 @@
     var chips = (h.facts || []).map(function (f, i) {
       return '<li class="chip chip-' + colors[i % 4] + '"><span class="chip-k">' + esc(f.label) + '</span><span class="chip-v">' + esc(f.value) + '</span></li>';
     }).join('');
-    return '<p class="hero-line">' + esc(h.line) + '</p>' +
+    return '<div class="hero-about"><h2 class="about-h">' + esc(h.aboutTitle) + '</h2>' +
+      (h.about || []).map(function (t) { return '<p>' + esc(t) + '</p>'; }).join('') + '</div>' +
       '<p class="hero-sub hand">' + esc(h.sub) + '</p>' +
       '<ul class="chips" aria-label="Quick facts">' + chips + '</ul>';
   }

@@ -5,7 +5,12 @@ window.SITE_CONFIG = {
 
   hero: {
     greeting: "Hello there",
-    line: "Hi, I'm Shevie. A seventh-semester Informatics student, currently interning, and always learning.",
+    aboutTitle: "A Little About Me",
+    about: [
+      "Hi! I'm Shevie Putri Ariandani, an Informatics student at Universitas Ahmad Dahlan, currently in my seventh semester. I'm interested in game development and enjoy exploring how ideas can be turned into fun and interactive experiences.",
+      "At the moment, I'm doing an internship at a company by one of my lecturers, where I'm involved in a game development project. It's been a great opportunity to learn through real projects, explore different aspects of game development, and improve my skills along the way.",
+      "I'm always curious about trying new things, experimenting with ideas, and finding creative ways to bring them to life. For me, game development is not just about making a game work, but also about creating an experience that people can enjoy."
+    ],
     sub: "Welcome to my little corner of the internet. Stay a while.",
     facts: [
       { label: "University", value: "UAD Yogyakarta" },

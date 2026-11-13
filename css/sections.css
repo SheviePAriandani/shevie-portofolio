@@ -30,7 +30,7 @@
 .hero-art { display: grid; justify-items: center; padding-top: 4.5rem; }
 
 .deco .d { position: absolute; width: 44px; opacity: .9; }
-.deco .d1 { left: 4%; top: 14%; width: 38px; }
+.deco .d1 { left: 66%; top: 5%; width: 38px; }
 .deco .d2 { right: 8%; top: 12%; width: 42px; transform: rotate(18deg); }
 .deco .d3 { left: 46%; bottom: 8%; width: 36px; transform: rotate(-10deg); }
 .deco .d4 { right: 3%; top: 54%; width: 30px; }
@@ -323,3 +323,10 @@
 .trail { height: 100%; }
 html:not(.js) .filters, html:not(.js) .acc-chev { display: none; }
 html:not(.js) .acc-btn { cursor: default; }
+
+/* hero: about text */
+.hero-about { max-width: 58ch; margin-bottom: 1rem; }
+.about-h { font: 600 clamp(1.6rem, 3vw, 2.1rem)/1.2 var(--f-display); margin-bottom: .6rem; }
+.hero-about p { font-size: 1.06rem; line-height: 1.7; }
+.hero-about p + p { margin-top: .75rem; }
+.hero-sub { margin-top: 1.25rem; }
