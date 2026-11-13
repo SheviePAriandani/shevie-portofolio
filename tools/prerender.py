@@ -23,7 +23,9 @@ INDEX = ROOT / "index.html"
 def serve():
     handler = lambda *a, **k: http.server.SimpleHTTPRequestHandler(*a, directory=str(ROOT), **k)
     handler.log_message = lambda *a: None
-    httpd = socketserver.TCPServer(("127.0.0.1", 0), handler)
+    socketserver.ThreadingTCPServer.daemon_threads = True
+    socketserver.ThreadingTCPServer.request_queue_size = 64
+    httpd = socketserver.ThreadingTCPServer(("127.0.0.1", 0), handler)
     threading.Thread(target=httpd.serve_forever, daemon=True).start()
     return httpd
 

@@ -100,7 +100,7 @@
     var v = CFG.video || {};
     return '<div class="script card">' +
       '<h3 class="script-h"><button class="acc-btn" type="button" id="script-btn" aria-expanded="false" aria-controls="script-panel"><span>Read the script</span>' + ico('chev', 'acc-chev') + '</button></h3>' +
-      '<div class="acc-panel" id="script-panel" role="region" aria-labelledby="script-btn"><div class="acc-clip"><blockquote class="script-text">' + esc(v.script) + '</blockquote></div></div>' +
+      '<div class="acc-panel" id="script-panel" role="region" aria-labelledby="script-btn"><div class="acc-clip"><blockquote class="script-text">' + [].concat(v.script || []).map(function (t) { return '<p>' + esc(t) + '</p>'; }).join('') + '</blockquote></div></div>' +
       '</div>';
   }
 

@@ -330,3 +330,7 @@ html:not(.js) .acc-btn { cursor: default; }
 .hero-about p { font-size: 1.06rem; line-height: 1.7; }
 .hero-about p + p { margin-top: .75rem; }
 .hero-sub { margin-top: 1.25rem; }
+
+.script-text p + p { margin-top: .9rem; }
+
+.script:hover { transform: none; box-shadow: 5px 5px 0 var(--shadow); }
