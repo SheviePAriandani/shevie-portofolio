@@ -24,7 +24,7 @@ window.SITE_CONFIG = {
      provider: "youtube" (set id) or "file" (set src, for example "assets/video/intro.mp4") */
   video: {
     provider: "youtube",
-    id: "",
+    id: "XKrqKp9Hlis",
     src: "",
     poster: "",
     title: "Self-introduction by Shevie Putri Ariandani",
