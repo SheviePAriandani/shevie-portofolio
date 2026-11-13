@@ -6,7 +6,7 @@ Static site: plain HTML, CSS, and JavaScript. No framework, no build step, no ru
 - All site text is English: advanced but relaxed and polite, written like a real student, not like an AI.
 - No em or en dashes in prose, no "not X but Y" contrasts, no stacked triads, no sales language. Short, natural sentences.
 - Never invent facts. Anything marked [CONFIRM] in `_inbox/CONTENT_Shevie.md` stays off the public page.
-- Never publish phone, email, address, date of birth, religion, NIM, or family details.
+- Never publish phone, email, address, NIM, or family details. Exception, by explicit request of the site owner on 2026-11-13: the CV shows a Personal data block (name, place and date of birth, gender, religion, citizenship). Set `personal: null` in `data/cv.js` to hide it.
 - Cats are decoration. Never write that Shevie owns or loves cats.
 
 ## Assets

@@ -124,6 +124,11 @@
 
     out.push('<section class="cv-block cv-profile" aria-labelledby="cv-h-profile"><h4 id="cv-h-profile" class="cv-h">Profile</h4><p>' + esc(CV.profile) + '</p></section>');
 
+    if (CV.personal && CV.personal.length) {
+      out.push('<section class="cv-block cv-personal" aria-labelledby="cv-h-personal"><h4 id="cv-h-personal" class="cv-h">Personal data</h4><dl class="pd">' +
+        CV.personal.map(function (r) { return '<div class="pd-row"><dt>' + esc(r.label) + '</dt><dd>' + esc(r.value) + '</dd></div>'; }).join('') + '</dl></section>');
+    }
+
     out.push('<section class="cv-block cv-edu" aria-labelledby="cv-h-edu"><h4 id="cv-h-edu" class="cv-h">Education</h4><ol class="timeline">' +
       (CV.education || []).map(function (e, i) {
         return '<li class="tl-item"><span class="tl-dot" aria-hidden="true"></span>' +

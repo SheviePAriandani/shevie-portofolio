@@ -360,3 +360,13 @@ svg.postmark { position: absolute; right: calc(clamp(1rem, 4vw, 2.4rem) + 40px);
 @media (max-width: 560px) { svg.stamp { width: 54px; height: 66px; top: 2.2rem; } svg.postmark { display: none; } .letterhead { padding-right: 4.2rem; } }
 
 @media (max-width: 560px) { .hobbies { gap: 1rem .5rem; } .hobby { width: 84px; } }
+
+/* CV: personal data */
+.cv-grid { grid-auto-flow: dense; }
+.cv-personal { grid-column: 1; }
+.pd { display: grid; gap: .1rem; }
+.pd-row { display: grid; grid-template-columns: minmax(7.5rem, 9.5rem) minmax(0, 1fr); gap: .75rem; padding: .35rem 0; border-bottom: 2px dotted rgb(91 78 112 / .35); }
+.pd dt { font-weight: 600; color: var(--ink2); }
+.pd dd { margin: 0; font-weight: 600; }
+@media (max-width: 760px) { .cv-personal { grid-column: 1; } }
+@media (max-width: 400px) { .pd-row { grid-template-columns: 1fr; gap: 0; } }

@@ -3,6 +3,15 @@ window.SITE_CV = {
   headline: "Informatics Engineering student, Universitas Ahmad Dahlan",
   profile: "Seventh-semester Informatics Engineering student at Universitas Ahmad Dahlan, currently doing an internship. I hope to graduate on time and build a career where I can keep learning and growing.",
 
+  /* Personal data, added at the request of the site owner. Set to null to hide the whole block. */
+  personal: [
+    { label: "Name", value: "Shevie Putri Ariandani" },
+    { label: "Place and date of birth", value: "Kulon Progo, 18 January 2005" },
+    { label: "Gender", value: "Female" },
+    { label: "Religion", value: "Islam" },
+    { label: "Citizenship", value: "Indonesian" }
+  ],
+
   education: [
     { school: "Universitas Ahmad Dahlan, Yogyakarta", detail: "Informatics Engineering", period: "2023 to present" },
     { school: "SMAN 1 Prembun", detail: "Senior high school", period: "2019 to 2023" },
