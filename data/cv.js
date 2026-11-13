@@ -21,21 +21,10 @@ window.SITE_CV = {
   /* "english" stays empty where the English wording is still a [CONFIRM] item.
      The page then shows the original Indonesian name only. */
   experience: [
-    {
-      original: "Koor Divisi DPT, Panitia Kongres UKM Tari",
-      english: "Coordinator, Voter List (DPT) Division",
-      org: "Committee of the UKM Tari Congress"
-    },
-    {
-      original: "Anggota Divisi DPT, Panitia Buwaca Satwatika 2024",
-      english: "", /* [CONFIRM] English wording and what the event is */
-      org: ""
-    },
-    {
-      original: "Anggota Dewan Penggalang SMPN 1 Prembun",
-      english: "", /* [CONFIRM] English wording */
-      org: ""
-    }
+    { original: "Panitia P2k Universitas Ahmad Dahlan 2024", english: "", org: "" },
+    { original: "Panitia P2k Universitas Ahmad Dahlan 2025", english: "", org: "" },
+    { original: "Pengurus UKM Tari 2024/2025", english: "", org: "" },
+    { original: "Panitia Buwaca Satwatika 3rd 2024", english: "", org: "" }
   ],
 
   /* Shown only when filled. Example:
