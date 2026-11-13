@@ -15,7 +15,8 @@ window.SITE_CV = {
   education: [
     { school: "Universitas Ahmad Dahlan, Yogyakarta", detail: "Informatics Engineering", period: "2023 to present" },
     { school: "SMAN 1 Prembun", detail: "Senior high school", period: "2019 to 2023" },
-    { school: "SMPN 1 Prembun", detail: "Junior high school", period: "2016 to 2019" }
+    { school: "SMPN 1 Prembun", detail: "Junior high school", period: "2016 to 2019" },
+    { school: "SDN Bagung", detail: "Elementary school", period: "2011 to 2016" }
   ],
 
   /* "english" stays empty where the English wording is still a [CONFIRM] item.

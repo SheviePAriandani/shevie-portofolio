@@ -386,3 +386,5 @@ svg.postmark { position: absolute; right: calc(clamp(1rem, 4vw, 2.4rem) + 40px);
 @media (max-width: 760px) { .cv-exp { grid-row: auto; } .cv-skills, .cv-contact { grid-column: 1; } }
 .cv-int { grid-row: span 2; }
 @media (max-width: 760px) { .cv-int { grid-row: auto; } }
+
+.tl-item:nth-child(4) .tl-dot { background: var(--c-butter); }
