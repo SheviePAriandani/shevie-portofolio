@@ -161,7 +161,7 @@
 
     if (CV.skills && CV.skills.length) {
       out.push('<section class="cv-block cv-skills" aria-labelledby="cv-h-skills"><h4 id="cv-h-skills" class="cv-h">Skills</h4><ul class="skill-list">' +
-        CV.skills.map(function (s) { return '<li class="chip chip-butter"><span class="chip-v">' + esc(s) + '</span></li>'; }).join('') + '</ul></section>');
+        CV.skills.map(function (s, i) { return '<li class="chip chip-' + ['butter', 'mint', 'sky', 'blush'][i % 4] + '"><span class="chip-v">' + esc(s) + '</span></li>'; }).join('') + '</ul></section>');
     }
 
     var drawings = ['drawing-1', 'drawing-2', 'drawing-3'].map(function (d) { return slot(d, 'drawing'); }).join('');

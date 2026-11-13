@@ -43,7 +43,7 @@ window.SITE_CV = {
   internship: null,
 
   /* Shown only when filled. Example: ["Skill one", "Skill two"] */
-  skills: null,
+  skills: ["Blender", "Unity", "Canva", "IbisPaint", "Figma", "Godot", "Roblox Studio"],
 
   interests: [
     { icon: "book", label: "Reading books" },

@@ -379,3 +379,10 @@ svg.postmark { position: absolute; right: calc(clamp(1rem, 4vw, 2.4rem) + 40px);
 .contact-list li:nth-child(2) .contact-ico { background: var(--c-mint); } .contact-list li:nth-child(3) .contact-ico { background: var(--c-butter); }
 
 @media (max-width: 420px) { .contact-list li { gap: .55rem; font-size: .9rem; } .contact-ico { width: 34px; height: 34px; } .contact-ico .ico { width: 18px; height: 18px; } }
+
+/* CV: balance the two columns */
+.cv-exp { grid-row: span 2; }
+.cv-skills, .cv-contact { grid-column: 2; }
+@media (max-width: 760px) { .cv-exp { grid-row: auto; } .cv-skills, .cv-contact { grid-column: 1; } }
+.cv-int { grid-row: span 2; }
+@media (max-width: 760px) { .cv-int { grid-row: auto; } }
