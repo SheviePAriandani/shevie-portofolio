@@ -15,8 +15,9 @@ window.SITE_LETTER = {
     "Although most of my internship experience focuses on game development, it has helped me understand how design and technical implementation work together to create interactive digital products. I believe my experience with Figma, visual design, and collaborative projects makes me a suitable candidate for this position.",
     "I would be grateful for the opportunity to contribute and further develop my skills at TechNova Digital Solutions."
   ],
-  figmaTitle: "Figma Project",
+  figmaTitle: "Figma Projects",
   figma: [
+    { label: "Desain Web Dusun Pripih", url: "https://www.figma.com/design/Pgg8eiiGNQ0nmvOrlZdNEX/Desain-Web-Dusun-Pripih?node-id=0-1&t=TIkPnMaF5Z8fGc1m-1" },
     { label: "UI GAME", url: "https://www.figma.com/design/cCC9VYRzSFuS9uYbROGLHr/UI-GAME?node-id=0-1&t=t4cLW75Kjhumb8wc-1" },
     { label: "IMK Jatuh", url: "https://www.figma.com/design/pwePqIut7Ujki9tsCe690W/IMK_Jatuh?node-id=0-1&t=DufSvInJoA9Cv0r5-1" },
     { label: "IMK Jatuh WireFrame", url: "https://www.figma.com/design/fUizDQNYW51LvXz2aRam9I/IMK_Jatuh_WireFrame?t=pptlKqcLoOfqsc8z-1" }
