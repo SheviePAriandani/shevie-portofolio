@@ -13,6 +13,7 @@ import pathlib
 import re
 import socketserver
 import threading
+import time
 
 from playwright.sync_api import sync_playwright
 
@@ -54,6 +55,9 @@ def main():
         block = f"<!-- prerender:{name} -->\n{inner}\n<!-- /prerender:{name} -->"
         html, n = pattern.subn(lambda m: block, html)
         print(f"{name}: {'ok' if n else 'MARKER MISSING'} ({len(inner)} chars)")
+    # new version number on every run, so browsers never reuse old CSS, JS, or data files
+    stamp = time.strftime("%Y%m%d%H%M")
+    html = re.sub(r"\?v=\w+", f"?v={stamp}", html)
     INDEX.write_text(html, encoding="utf-8")
 
 
