@@ -53,5 +53,10 @@ window.SITE_CV = {
     { icon: "yarn-stitch", label: "Knitting" }
   ],
 
+  /* Contact details, added at the request of the site owner. Set to null to show "Available on request" instead. */
+  contactDetails: [
+    { icon: "phone", label: "Phone", value: "0821-5898-8188", href: "tel:+6282158988188" },
+    { icon: "mail", label: "Email", value: "shevieariandani@gmail.com", href: "mailto:shevieariandani@gmail.com" }
+  ],
   contact: "Available on request"
 };

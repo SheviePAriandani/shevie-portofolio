@@ -171,7 +171,12 @@
       }).join('') + '</ul>' + (drawings ? '<div class="drawings">' + drawings + '</div>' : '') + '</section>');
 
     out.push('<section class="cv-block cv-contact" aria-labelledby="cv-h-contact"><h4 id="cv-h-contact" class="cv-h">Contact</h4>' +
-      '<p class="contact-line">' + ico('chat') + '<span>' + esc(CV.contact) + '</span></p></section>');
+      (CV.contactDetails && CV.contactDetails.length
+        ? '<ul class="contact-list">' + CV.contactDetails.map(function (c) {
+            var v = c.href ? '<a href="' + esc(c.href) + '">' + esc(c.value) + '</a>' : '<span>' + esc(c.value) + '</span>';
+            return '<li><span class="contact-ico">' + ico(c.icon) + '</span><span class="sr-only">' + esc(c.label) + ': </span>' + v + '</li>';
+          }).join('') + '</ul>'
+        : '<p class="contact-line">' + ico('chat') + '<span>' + esc(CV.contact) + '</span></p>') + '</section>');
 
     out.push('</div>');
     out.push('<footer class="cv-foot"><p class="hand">Updated ' + esc(CFG.updated) + '</p></footer>');

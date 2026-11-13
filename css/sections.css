@@ -370,3 +370,12 @@ svg.postmark { position: absolute; right: calc(clamp(1rem, 4vw, 2.4rem) + 40px);
 .pd dd { margin: 0; font-weight: 600; }
 @media (max-width: 760px) { .cv-personal { grid-column: 1; } }
 @media (max-width: 400px) { .pd-row { grid-template-columns: 1fr; gap: 0; } }
+
+/* CV: contact details */
+.contact-list { display: grid; gap: .75rem; }
+.contact-list li { display: flex; align-items: center; gap: .8rem; font-weight: 600; overflow-wrap: anywhere; }
+.contact-ico { flex: none; display: grid; place-items: center; width: 40px; height: 40px; border-radius: 50%; border: 2px solid var(--c-plum); background: var(--c-blush); color: var(--c-plum); box-shadow: 2px 2px 0 var(--shadow); }
+.contact-ico .ico { width: 20px; height: 20px; }
+.contact-list li:nth-child(2) .contact-ico { background: var(--c-mint); } .contact-list li:nth-child(3) .contact-ico { background: var(--c-butter); }
+
+@media (max-width: 420px) { .contact-list li { gap: .55rem; font-size: .9rem; } .contact-ico { width: 34px; height: 34px; } .contact-ico .ico { width: 18px; height: 18px; } }
