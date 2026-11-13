@@ -38,8 +38,10 @@ window.SITE_CV = {
 
   interests: [
     { icon: "book", label: "Reading books" },
+    { icon: "gamepad", label: "Playing games" },
+    { icon: "dance", label: "Dance" },
     { icon: "brush", label: "Drawing" },
-    { icon: "dance", label: "Dance" }
+    { icon: "yarn-stitch", label: "Knitting" }
   ],
 
   contact: "Available on request"

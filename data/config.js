@@ -16,7 +16,7 @@ window.SITE_CONFIG = {
       { label: "University", value: "UAD Yogyakarta" },
       { label: "Semester", value: "7" },
       { label: "Now", value: "internship" },
-      { label: "Hobbies", value: "reading, drawing, dance" }
+      { label: "Hobbies", value: "reading, games, dance, drawing, knitting" }
     ]
   },
 
